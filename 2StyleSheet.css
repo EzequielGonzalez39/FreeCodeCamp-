@@ -1,0 +1,118 @@
+/* 
+En el head de el doc html se puede poner:
+<style> 
+h1 {
+    text-align: center;
+}
+</style> 
+*/
+
+h1, h2, p {
+    text-align: center;
+  }
+
+h1, h2 {
+    font-family: Impact, serif; /* La segunda se usa si la primera no esta disponible */
+    font-weight: lighter; /*Se lo agregue yo porque no se leia bien*/
+  }
+
+h1 { 
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px; /*margen negativo, sube el elemento. Seria como quitar margen a h2*/
+  }
+  
+  
+h2 {
+    font-size: 30px;
+  }
+
+.established {
+    font-style: italic;
+  }
+
+body {
+    /* background-color: burlywood;*/
+    background-image:url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif;
+    padding: 20px; /*Agranda la parte de los granos de cafe 20px de cada lado*/
+  }
+
+.menu {
+    width: 80%; /*80% of its parent element(body)*/
+    max-width: 500px; /*Para que no aparezca demasiado separado en pantallas anchas*/
+    background-color:burlywood;
+    margin-left:auto;
+    margin-right:auto; /*Con los dos margenes en auto queda centrado en el elemento padre*/
+    padding-left:20px;
+    padding-right:20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }  
+
+.flavor, .dessert{
+    text-align: left;
+    width: 75%; /*inline-block elements only take up the width of their content*/
+}
+
+.price{
+    text-align: right;
+    width: 25%; /*Ponemos 75 25 responsive desing ya que los precios tienen menos letras que los sabores*/
+}
+
+/*You can style all the p elements nested anywhere in elements with a class named item like this:*/
+.item p {
+    display: inline-block;
+    margin-top:5px;
+    margin-bottom:5px; /*Se acercan los p dentro del menu*/
+    font-size: 18px;
+}
+
+hr {
+    height: 2px;
+    background-color: brown; 
+    border-color: brown; /*Esto suma 1 px de cada lado del borde*/
+}
+
+.bottom-line {
+    margin-top: 25px; 
+  }
+
+  /*FOOTER*/
+
+  footer{
+    font-size: 14px;
+  }
+
+  footer p {
+    margin-top:5px;
+    margin-bottom:5px;
+  }
+
+  a {
+    color: black;
+  }
+
+  a:visited{
+    color:black;
+  }
+
+  a:hover {
+    color:brown;
+  }
+
+  a:active {
+    color:brown;
+  }
+
+  .address {
+    margin-bottom: 5px;
+  }
+  

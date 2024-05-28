@@ -1,0 +1,271 @@
+#header-img {
+display: inline-block;
+width: 110px;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+#header {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav{
+    width: 60%;
+    margin-left: 70px;
+    z-index: 999;
+    
+}
+
+nav ul li {
+    font-size: 0.9rem;
+}
+
+
+
+#caracteristicas{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+svg {
+    float: left;
+    margin: 0;
+    padding-right: 30px;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    padding-top: 6px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#enviosrapidos{
+    width: 50%;
+    padding-top: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+}
+
+#atencionpersonalizada{
+    width: 50%;
+}
+
+#calidadgarantizada{
+    width: 50%;
+    padding-bottom: 20px;
+}
+
+main {
+    position: absolute;
+    width: 100%;
+    top: 90px;
+}
+
+input {
+    width: 30%;
+    display: block;
+}
+
+.boton{
+    width: 60px;
+}
+
+form{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+
+form h3, form input {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#video-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#video {
+    width: 560px;
+    height: 315px;
+    padding: 25px 0;
+}
+
+ .vis-box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: auto;
+    height: 250px;
+    border: 2px solid black;
+}
+
+.inv-box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: auto;
+    height: 250px;
+}
+
+#grid-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: '#uno #dos #tres #cuatro #cinco';
+    column-gap: 1em;
+    margin: 0 30px;
+}
+
+.parte-gris{
+    height: 15%;
+    width: 100%;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+}
+
+h4{
+    margin: 0 auto;
+}
+
+.lainfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2.1em;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 12px;
+}
+
+
+.styled {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 35px ;
+    border: 0;
+    line-height: 2em;
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(220 0 0 / 100%);
+    background-image: linear-gradient(
+      to top left,
+      rgb(0 0 0 / 20%),
+      rgb(0 0 0 / 20%) 30%,
+      rgb(0 0 0 / 0%)
+    );
+    box-shadow:
+      inset 2px 2px 3px rgb(255 255 255 / 60%),
+      inset -2px -2px 3px rgb(0 0 0 / 60%);
+  }
+  
+  .styled:hover {
+    background-color: rgb(255 0 0 / 100%);
+  }
+  
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgb(255 255 255 / 60%),
+      inset 2px 2px 3px rgb(0 0 0 / 60%);
+}
+      
+
+.lainfo p:last-of-type {
+    margin-bottom: 12px;
+}
+
+.copyright{
+    width: 60%;
+    height: 75px;
+    margin: 0 auto;
+    background-color: aquamarine;  
+    font-size: 13px;
+}
+
+.cop-box {
+width: 100%;
+display: flex;
+margin-top: 12px;
+}
+
+.cop-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1em;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.cop-text{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 20px;
+    margin-top: -10px;
+}
+
+.agrandar {
+    font-size: 2em;
+}
+
+a {
+    color: black;
+}
+
+
+@media (max-width: 1000px){
+    h1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}

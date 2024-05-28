@@ -1,0 +1,77 @@
+body {
+    width: 100%;
+    height: 100vh;  /*1 vh es igual a 1% viewport height*/
+    margin: 0; /* al ser 100 por 100 del device screen, sin margen se acopla perfecto sin scrolls*/
+    background-color: #1b1b32;
+    color: #f5f6f7;  /*color del texto*/
+    font-family: Tahoma;
+    font-size: 16px;
+}
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid rgb(59, 59, 79);
+}
+
+fieldset:last-of-type {
+    border-bottom: none; /*Pseudo selector, el ultimo de la clase*/
+}
+
+label {
+   display: block;
+   margin: 0.5rem 0;
+}
+  
+
+input, textarea, select {
+    width: 100%; /*of the parent element*/
+    margin: 10px 0 0 0;
+    min-height: 2em;
+}
+
+input, textarea {
+    background-color: #0A0A23;
+    border: 1px solid #0a0a23;
+    color: #ffffff; 
+    
+}
+
+.inline{
+    width: unset; /* remove previous rule on inputs that makes them take 100% width*/
+    margin: 0 0.5em 0 0 ; /*top right bottom left*/
+    vertical-align: middle; /*centrado verticalmente con el texto*/
+  }
+
+
+  input[type='submit']{     /*selector esecifico, input[name: password]*/
+    display: block;
+    width: 60%;
+    min-width: 300px;
+    margin: 1em auto;
+    height: 2em; /*1em equivale al ancho de la letra “M” (mayúscula*/
+    font-size: 1.1rem; /*1rem equivale al tamaño de fuente del elemento HTML, que es 16px*/
+    background-color: #3b3b4f;
+    border-color: white;
+  }  
+
+  input[type='file']{
+    padding: 1px 2px; /*esto es el default para los input en los que se puede escribir*/
+  }
+
+  a {
+    color: #dfdfe2;
+  }

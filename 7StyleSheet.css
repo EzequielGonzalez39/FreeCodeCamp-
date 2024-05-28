@@ -1,0 +1,76 @@
+/*
+By default, the content-box model is used. When an element has a specific width,
+that width is calculated based only on the element's content. 
+Padding and border values get added to the total width.
+* = goblal selector.
+
+* {
+  box-sizing: content-box;
+} esto es la seleccion por default.            
+
+* {
+    box-sizing: border-box;
+} esto hace que el height and width sea calculado hasta el borde.
+
+
+flex-direction >>>> row - row-reverse - column - column-reverse
+flex-wrap >> wrap - no-wrap. define si se van o no a otra fila cuando no hay espacio.
+justify-content
+
+object-fit: cover. vThis will tell the image to fill the img container while maintaining aspect ratio.
+
+gap - row-gap - column-gap >>> Space between items.
+
+.gallery::after {
+  content: '';
+  width: 350px;
+} crea un elemento final, vacio, para que la ultima imagen no quede centrada por el justify content.
+en caso de que sean dos columnas.
+
+*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #f5f6f7;
+  }
+  
+  .header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .gallery::after {
+    content: "";
+    width: 350px;
+  }
+  
+

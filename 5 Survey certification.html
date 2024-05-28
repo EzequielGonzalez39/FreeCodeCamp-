@@ -1,0 +1,59 @@
+<!DOCTYPE html5>
+<html lang='es'>
+  <head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='5StyleSheet.css' type='text/css'>
+    <title>Creditos Benignano</title>
+  </head>
+  <body>
+    <h1 id='title'>Creditos Benignano<h1>
+
+    <p id='description'>Complete el formulario y nos contactaremos en la brevedad.</p>
+
+<form id='survey-form'>
+
+<fieldset>
+  <label for='name' id='name-label' class="agrandar">Nombre:<input type='text' id='name' name='name' placeholder='Nombres' required></label>
+  <label for='email' id='email-label' class="agrandar">Email:<input type='email' id='email' name='email' placeholder='Correo electronico' required></label>
+  <label for='number' id='number-label' class="agrandar">Telefono:<input type='number' id='number' name='number' pattern='[0-9]{7,13}' placeholder='Numero de telefono' min='7' max="13"></label>
+</fieldset>
+
+<fieldset>
+    <label for='dropdown' class="agrandar"> Que monto desea financiar?
+    <select id='dropdown'>
+      <option value=''>(seleccionar)</option>
+      <option value='500.000'>Hasta ARS $500.000</option>
+      <option value='1.200.000'>Hasta ARS $1.200.000</option>
+      <option value='2.000.000'>Hasta ARS $2.000.000</option>
+      <option value='3.000.000'>Hasta ARS $3.000.000</option>
+    </select>  
+  </fieldset>
+
+<fieldset>
+  <legend>El titular del credito figura en la lista VERAZ?</legend>
+
+  <label for='si-veraz'><input type='radio' value='si-veraz' id='si-veraz' name='veraz' class='inline' checked>Si<label>
+  <label for='no-veraz'><input type="radio" value='no-veraz' id="no-veraz" name="veraz" class='inline'>No</label>
+
+</fieldset>
+<fieldset>
+    <Legend>Como te enteraste de nuestros creditos?</Legend>
+      <label for='amigos'><input type='checkbox' id='friends' name='where-hear' class='inline' value="amigos" checked>Amigos<label>
+      <label for='publicidad'><input type="checkbox" id="publicidad" name="where-hear"class='inline' value="publicidad">Publicidad</label>
+      <label for='comentarios-reseñas'><input type='checkbox' id='comentarios-reseñas' name='where-hear' class='inline' value="comentarios-reseñas">Comentarios o reseñas</label>
+      <label for='eventos'><input type='checkbox' id='eventos' name='where-hear' class='inline' value="eventos">Eventos</label>
+      <label for='otros'><input type='checkbox' id='otros' name='where-hear' class='inline' value="otros">Otros</label>
+  </fieldset>
+
+  <fieldset>
+    <label for="comentarios-adicionales" class="agrandar">Comentarios:
+      <textarea name="comentarios-adicionales" id="comentarios-adicionales" cols="30" rows="5"></textarea>
+    </label>
+  </fieldset>
+   <input type="submit" id="submit" value="Enviar">
+</form>
+
+  <body>
+</html>
+

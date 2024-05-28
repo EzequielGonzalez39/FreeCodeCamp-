@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="14StyleSheet.css" type="text/css">
+    <title>Sobre HTML...</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>HTML Documentation</header>
+        <ul>
+            <li><a href="#Introducción" class="nav-link">Introducción</a></li>
+            <li><a href="#Mas_sobre_HTML" class="nav-link">Mas sobre HTML</a></li>
+            <li><a href="#Anatomia_de_los_elementos" class="nav-link">Anatomia de los elementos</a></li>
+            <li><a href="#Anidar_elementos" class="nav-link">Anidar elementos</a></li>
+            <li><a href="#Elementos_vacios" class="nav-link">Elementos vacios</a></li>
+            <li><a href="#Documentos_HTML" class="nav-link">Documentos HTML</a></li>
+            
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introducción">
+            <header>Introducción</header>
+            <p>El Lenguaje de Marcado de Hipertexto (HTML -  HyperText Markup Language) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos.
+            Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes y tablas de datos.</p>
+        </section>
+
+        <section class='main-section' id="Mas_sobre_HTML">
+            <header>Mas sobre HTML</header>
+            <p>
+                HTML no es un lenguaje de programación; es un lenguaje de marcado que define la estructura de tu
+                contenido. HTML consiste en una serie de elementos que usarás para encerrar diferentes partes del 
+                contenido para que se vean o comporten de una determinada manera.
+            </p>
+            <p>Por ejemplo, en la linea de contenido: 'Estoy aprendiendo a programar'.
+                Si quieres especificar que se trata de un texto, entonces deberias usar la etiqueta de parrafo &ltp&gt y &lt/p&gt. 
+            </p>
+            <code class="onelinecode">
+                &ltp&gt Estoy aprendiendo a programar. &lt/p&gt
+            </code>
+        </section>
+
+        <section class="main-section" id="Anatomia_de_los_elementos">
+            <header>Anatomia de los elementos</header>
+            <p>Las partes principales del elemento son:</p>
+            <ol>
+                <li><b>La etiqueta de apertura:</b> consiste en el nombre del elemento (en este caso, p), encerrado por paréntesis angulares (< >) de apertura y cierre. Establece dónde comienza o empieza a tener efecto el elemento —en este caso, dónde es el comienzo del párrafo—.</li>
+                <li><b>La etiqueta de cierre:</b> es igual que la etiqueta de apertura, excepto que incluye una barra de cierre (/) antes del nombre de la etiqueta. Establece dónde termina el elemento —en este caso dónde termina el párrafo—.</li>
+                <li><b>El contenido:</b> este es el contenido del elemento, que en este caso es sólo texto.</li>
+                <li><b>El elemento:</b> la etiqueta de apertura, más la etiqueta de cierre, más el contenido equivale al elemento.</li>
+            </ol>
+
+            <figure>
+            <img id="img1" src="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-small.png" alt="Anatomia HTML">
+           </figure>
+
+            <p>Los elementos pueden también tener atributos, que se ven así:</p>
+            
+            <figure>
+            <img id="img2" src="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-attribute-small.png" alt="Atributo CLASS">
+            </figure>
+
+            <p>Los atributos contienen información adicional acerca del elemento, la cual no quieres que aparezca en el contenido real del elemento. Aquí class es el nombre del atributo y editor-note el valor del atributo. En este caso, el atributo class permite darle al elemento un nombre identificativo, que se puede utilizar luego para apuntarle al elemento información de estilo y demás cosas.</p>
+
+            <p>Un atributo debe tener siempre:</p>
+            <ol>
+                <li>Un espacio entre este y el nombre del elemento (o del atributo previo, si el elemento ya posee uno o más atributos).</li>
+                <li>El nombre del atributo, seguido por un signo de igual (=).</li>
+                <li>Comillas de apertura y de cierre, encerrando el valor del atributo.</li>
+            </ol>
+            <p>Los atributos siempre se incluyen en la etiqueta de apertura de un elemento, nunca en la de cierre.</p>
+        </section>
+
+        <section class="main-section" id="Anidar_elementos">        
+            <header>Anidar elementos</header>
+            <p>Puedes también colocar elementos dentro de otros elementos —esto se llama anidamiento—. Si, por ejemplo, quieres resaltar una palabra del texto (en el ejemplo la palabra «muy»), podemos encerrarla en un elemento &ltstrong&gt, que significa que dicha palabra se debe enfatizar:</p>
+            <code class="onelinecode">&ltp&gtMi gato es &ltstrong&gt<strong>muy</strong>&lt/strong&gt gruñon.&lt/p&gt</code>
+            <p>Esto se veria de la siguiente forma:</p>
+            <code class="onelinecode">Mi gato es <strong>muy</strong> gruñon.</code>
+            <p>Los elementos deben abrirse y cerrarse ordenadamente, de forma tal que se encuentren claramente dentro o fuera el uno del otro. Si estos se encuentran solapados, el navegador web tratará de adivinar lo que intentas decirle, pero puede que obtengas resultados inesperados. Así que, ¡no lo hagas!</p>
+        </section>
+
+        <section class="main-section" id="Elementos_vacios">        
+            <header>Elementos vacios</header>
+            <p>Algunos elementos no poseen contenido, y son llamados elementos vacíos. Toma, por ejemplo, el elemento &ltimg&gt de nuestro HTML:</p>
+            <code class="onelinecode">&ltimg src="images/firefox-icon.png" alt="Mi imagen de prueba" /&gt</code>
+            <p>Posee dos atributos, pero no hay etiqueta de cierre &lt/img&gt ni contenido encerrado. Esto es porque un elemento de imagen no encierra contenido al cual afectar. Su propósito es desplegar una imagen en la página HTML, en el lugar en que aparece.</p>
+        </section>
+
+        <section class="main-section" id="Documentos_HTML">        
+            <header>Documentos HTML</header>
+            <p>Hasta ahora has visto lo básico de elementos HTML individuales, pero estos no son muy útiles por sí solos. Ahora verás cómo los elementos individuales son combinados para formar una página HTML entera.</p>
+            
+            <code class="onelinecode">
+                &lt!doctype html&gt <br>
+                &nbsp &lthtml&gt<br>
+                &nbsp &nbsp &lthead&gt<br>
+                &nbsp &nbsp &nbsp &ltmeta charset="utf-8" /&gt<br>
+                &nbsp &nbsp &nbsp &lttitle>Mi pagina de prueba&lt/title&gt<br>
+                &nbsp &nbsp &lt/head&gt<br>
+                &nbsp &nbsp &ltbody&gt<br>
+                &nbsp &nbsp &nbsp &ltimg src="images/firefox-icon.png" alt="Mi imagen de prueba" /&gt<br>
+                &nbsp &nbsp &lt/body&gt<br>
+                &nbsp &lt/html&gt<br>
+            </code>
+
+           <p>Tienes:</p>
+
+           <ul>
+            <li>&lt!DOCTYPE html&gt — el tipo de documento. Es un preámbulo requerido. Hoy día es simplemente un artefacto antiguo que a nadie le importa, pero que debe ser incluido para que todo funcione correctamente.</li>
+
+            <li>&lthtml&gt &lt/html&gt — el elemento &lthtml&gt. Este elemento encierra todo el contenido de la página entera y, a veces, se le conoce como el elemento raíz (root element).</li>
+
+            <li>&lthead&gt&lt/head&gt — el elemento &lthead&gt. Este elemento actúa como un contenedor de todo aquello que quieres incluir en la página HTML que no es contenido visible por los visitantes de la página. Incluye cosas como palabras clave (keywords), una descripción de la página que quieres que aparezca en resultados de búsquedas, código CSS para dar estilo al contenido, declaraciones del juego de caracteres, etc.</li>
+
+            <li>&ltmeta charset="utf-8"&gt — &ltmeta&gt. Este elemento establece el juego de caracteres que tu documento usará en utf-8, que incluye casi todos los caracteres de todos los idiomas humanos. Básicamente, puede manejar cualquier contenido de texto que puedas incluir. No hay razón para no establecerlo, y puede evitar problemas en el futuro.</li>
+
+            <li>&lttitle&gt&lt/title&gt — el elemento &lttitle&gt establece el título de tu página, que es el título que aparece en la pestaña o en la barra de título del navegador cuando la página es cargada, y se usa para describir la página cuando es añadida a los marcadores o como favorita.</li>
+
+            <li>&ltbody&gt&lt/body&gt — el elemento &ltbody&gt. Encierra todo el contenido que deseas mostrar a los usuarios web que visiten tu página, ya sea texto, imágenes, videos, juegos, pistas de audio reproducibles, y demás.</li>
+           </ul>
+           
+        </section>
+        
+
+    </main>
+
+</body>
+</html>
